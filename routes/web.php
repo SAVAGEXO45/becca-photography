@@ -34,6 +34,7 @@ Route::get('/services', [ServiceController::class, 'index'])->name('services.ind
 Route::get('/services/{slug}', [ServiceController::class, 'show'])->name('services.show');
 
 Route::get('/book', [BookingController::class, 'create'])->name('booking.create');
+Route::redirect('/booking', '/book');
 Route::post('/book', [BookingController::class, 'store'])->name('booking.store');
 Route::get('/booking-confirmation/{reference}', [BookingController::class, 'confirmation'])->name('booking.confirmation');
 Route::get('/track-booking', [BookingController::class, 'track'])->name('booking.track');
