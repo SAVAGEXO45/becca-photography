@@ -173,8 +173,8 @@ class BeccaPhotographyTest extends TestCase
     public function test_admin_login_authenticates_admin(): void
     {
         $response = $this->post('/admin/login', [
-            'email' => 'admin@beccaphotography.com',
-            'password' => 'admin123',
+            'email' => 'savagexo2023@gmail.com',
+            'password' => 'Fiyin@12345',
         ]);
 
         $response->assertRedirect(route('admin.dashboard'));

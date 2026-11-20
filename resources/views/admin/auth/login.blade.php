@@ -69,12 +69,10 @@
             <div>
                 <div class="flex items-center justify-between mb-2">
                     <label for="password" class="text-xs uppercase tracking-wider text-[#cfccc4]">Password</label>
-                    <span class="text-[10px] text-[#807e78]">Default: admin123</span>
                 </div>
                 <input type="password"
                        id="password"
                        name="password"
-                       value="admin123"
                        required
                        class="w-full bg-[#0f1013] border border-white/10 px-4 py-3 text-sm text-white placeholder-stone-600 focus:outline-none focus:border-[#c5a880]">
             </div>
@@ -92,11 +90,7 @@
             </button>
         </form>
 
-        <!-- Credentials Quick Hint -->
         <div class="pt-4 border-t border-white/5 text-center text-xs text-[#807e78] space-y-1">
-            <div>Authorized Accounts:</div>
-            <div class="font-mono text-[11px] text-[#c5a880]">admin@beccaphotography.com · admin123</div>
-            <div class="font-mono text-[11px] text-[#c5a880]">savagexo@gmail.com · admin123</div>
             <div class="pt-2">
                 <a href="{{ route('home') }}" class="text-[#cfccc4] hover:text-white transition-colors">&larr; Return to Public Website</a>
             </div>
